@@ -25,6 +25,7 @@ async def on_ready():
 @client.command()
 @has_permissions(administrator=True)
 async def say(ctx, message=None):
+    print(ctx.message)
     print(message)
     await ctx.send(f"{ctx.message.content} ".removeprefix(".say "))
     await ctx.message.delete()
@@ -36,6 +37,7 @@ async def help(ctx):
     if ctx.message.content[5:7] == " 2":
         embed.add_field(name=".report", value="Report a user. It will be sent to the mods in a hidden channel and they will be pinged. Don't use unless someone is breaking a rule.", inline=False)
         embed.add_field(name=".rules", value="View the server rules", inline=False)
+        embed.add_field(name=".shout", value="Gives you a fun fact", inline=False)
         embed.set_footer(text="Page (2/2)")
     else:
         embed.add_field(name=".avatar", value="Sends your avatar. Or the avatar of anyone mentioned or replied to.", inline=False)
