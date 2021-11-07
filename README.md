@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 To set it up just edit the config.json and then you can run the program. Ouput should look something like this
 
-```python
+```
 Avatar Cog Ready
 Basic Command Cog Ready
 Clear Cog Ready
