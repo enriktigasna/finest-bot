@@ -8,7 +8,6 @@ from random import randint, uniform
 import os
 import json
 
-#CENSOR THIS WHEN SHARING CODE CENSOR THIS WHEN SHARING CODE CENSOR THIS WHEN SHARING CODE
 
 
 client = commands.Bot(command_prefix='>')
