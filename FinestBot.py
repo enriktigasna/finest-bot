@@ -8,8 +8,6 @@ from random import randint, uniform
 import os
 import json
 
-
-
 client = commands.Bot(command_prefix='>')
 client.remove_command('help')
 
