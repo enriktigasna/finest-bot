@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-To set it up just edit the config.json and then you can run the program. Ouput should look something like this
+To set it up just edit the config.json and then you can run FinstBot.py. Ouput should look something like this
 
 ```
 Avatar Cog Ready
