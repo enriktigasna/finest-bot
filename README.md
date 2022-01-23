@@ -1,16 +1,23 @@
 # Finest Bot
 
-Finest Bot is a lightweight general purpose discord bot written in python.
+Finest Bot is a lightweight general purpose discord bot written in python using the nextcord package.
 
 ## Installation
 
 ```
-git clone 
+git clone github.com/enriktigasna/finest-bot && cd finest-bot 
 ```
 
 ```bash
 pip install -r requirements.txt
 ```
+
+⚠WARNING⚠, AFTER CLONING, DO 
+```
+git update-index --assume-unchanged config.json
+```
+
+THIS IS SO THAT YOUR AUTHENTICATION TOKEN DOESN'T ACCIDENTALLY GET COMMITED
 
 ## Usage
 
@@ -29,10 +36,13 @@ Say and Shout cog ready
 User Info Cog Ready
 ```
 
+## Future of the project
+I have decided to continue on this project in nextcord after discord.py was discontinued, planning on adding slash command support soon
+
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Would love for someone to implement slash command support to the bot, however you will have to use discord-interactions since discord.py does not support them by default.
 
-## License
+### License
 [GPL](https://en.wikipedia.org/wiki/GNU_General_Public_License)

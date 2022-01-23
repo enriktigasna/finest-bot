@@ -1,5 +1,5 @@
-import discord
-from discord.ext import commands
+import nextcord
+from nextcord.ext import commands
 import asyncio
 
 class Help(commands.Cog):
@@ -15,7 +15,7 @@ class Help(commands.Cog):
     
     @commands.group(invoke_without_command=True, aliases=['h'])  
     async def help(self, ctx):    
-        embed=discord.Embed(title="Commands", color=0x17157e)
+        embed=nextcord.Embed(title="Commands", color=0x17157e)
         embed.set_author(name=ctx.message.author.name + "#" + ctx.message.author.discriminator, icon_url=ctx.message.author.avatar_url)
         if ctx.message.content[5:7] == " 2":
             embed.add_field(name=".report", value="Report a user. It will be sent to the mods in a hidden channel and they will be pinged. Don't use unless someone is breaking a rule.", inline=False)

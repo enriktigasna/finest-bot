@@ -1,6 +1,6 @@
-import discord
-from discord.ext import commands
-from discord.ext.commands import has_permissions
+import nextcord
+from nextcord.ext import commands
+from nextcord.ext.commands import has_permissions
 import asyncio
 from time import sleep
 import random
@@ -26,11 +26,21 @@ for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
         client.load_extension(f'cogs.{filename[:-3]}')
 
+
+
+# Test
+@client.slash_command(name="ping")
+async def ping(interaction):
+    await interaction.response.send_message("Pong!")
+
+
+
+
 # Ready
 @client.event
 async def on_ready():
     print("Bot is ready!")
-    await client.change_presence(activity=discord.Game(name="Today we sex!"))
+    await client.change_presence(activity=nextcord.Game(name="Today we sex!"))
 
 
 

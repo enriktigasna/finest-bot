@@ -1,5 +1,5 @@
-import discord
-from discord.ext import commands
+import nextcord
+from nextcord.ext import commands
 import asyncio
 
 
@@ -16,7 +16,7 @@ class Report(commands.Cog):
     async def report(self, ctx):
         if ctx.message.mentions:
             ReportsChannel = self.client.get_channel(861003050901700648)
-            embed=discord.Embed(title="Report", color=0xad1f1f)
+            embed=nextcord.Embed(title="Report", color=0xad1f1f)
             embed.set_author(name=ctx.author.name + "#" + ctx.author.discriminator, url=ctx.message.jump_url, icon_url=ctx.author.avatar_url)
             embed.add_field(name="Reported User:", value="@" + str(ctx.message.mentions[0]), inline=True)
             embed.add_field(name="Reason for Report:", value=ctx.message.content[30:], inline=True)

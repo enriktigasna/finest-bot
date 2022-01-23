@@ -1,5 +1,5 @@
-import discord
-from discord.ext import commands
+import nextcord
+from nextcord.ext import commands
 import random
 
 class KanyeQuotes(commands.Cog):
@@ -36,7 +36,7 @@ class KanyeQuotes(commands.Cog):
                      'People talk so much shit about me at barber shops, they forget to get their hair cut'
                      ]
         response = random.choice(responses)
-        embed = discord.Embed(title="Kanye Quotes:")
+        embed = nextcord.Embed(title="Kanye Quotes:")
         embed.set_author(name=ctx.author.name + "#" + ctx.author.discriminator, url=ctx.message.jump_url, icon_url=ctx.author.avatar_url)
         embed.add_field(name="Kanye Quote:", value=f"{response}")
         embed.set_footer(text='.suggest for Quote suggestions')

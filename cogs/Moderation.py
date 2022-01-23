@@ -1,6 +1,6 @@
-import discord
-from discord.ext import commands
-from discord.ext.commands import has_permissions
+import nextcord
+from nextcord.ext import commands
+from nextcord.ext.commands import has_permissions
 
 
 class Moderation(commands.Cog):

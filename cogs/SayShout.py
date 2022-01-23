@@ -1,6 +1,6 @@
-import discord
-from discord.ext import commands
-from discord.ext.commands import has_permissions
+import nextcord
+from nextcord.ext import commands
+from nextcord.ext.commands import has_permissions
 import asyncio
 
 
@@ -20,12 +20,12 @@ class Say(commands.Cog):
 
     @commands.command()
     @has_permissions(administrator=True)
-    async def shout(self, ctx, channel: discord.TextChannel):
+    async def shout(self, ctx, channel: nextcord.TextChannel):
         try:
             await channel.send(ctx.message.content[28:])
             await ctx.message.delete()
         except:
-            embed=discord.Embed( color=0x17157e)
+            embed=nextcord.Embed( color=0x17157e)
             embed.set_author(name=ctx.message.author.name + "#" + ctx.message.author.discriminator, icon_url=ctx.message.author.avatar_url)
             embed.add_field(name=".shout Usage", value=".shout \<channel\> \<input\>", inline=False)
 
