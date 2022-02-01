@@ -1,6 +1,6 @@
-import nextcord
-from nextcord.ext import commands
-from nextcord.ext.commands import has_permissions
+import disnake
+from disnake.ext import commands
+from disnake.ext.commands import has_permissions
 import asyncio
 from time import sleep
 import random
@@ -40,7 +40,7 @@ async def ping(interaction):
 @client.event
 async def on_ready():
     print("Bot is ready!")
-    await client.change_presence(activity=nextcord.Game(name="Today we sex!"))
+    await client.change_presence(activity=disnake.Game(name="Today we sex!"))
 
 
 

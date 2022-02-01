@@ -1,6 +1,6 @@
-import nextcord
-from nextcord.ext import commands
-from nextcord.ext.commands import has_permissions
+import disnake
+from disnake.ext import commands
+from disnake.ext.commands import has_permissions
 import time
 
 

@@ -1,5 +1,5 @@
-import nextcord
-from nextcord.ext import commands
+import disnake
+from disnake.ext import commands
 import random
 
 class _8ball(commands.Cog):
@@ -31,7 +31,7 @@ class _8ball(commands.Cog):
                      'Eh..'
                      ]
         response = random.choice(responses)
-        embed = nextcord.Embed(title=":8ball: It has spoken")
+        embed = disnake.Embed(title=":8ball: It has spoken")
         embed.add_field(name='Question: ', value=f'{question}', inline=True)
         embed.add_field(name='Answer: ', value=f'{response}', inline=True)
         embed.set_footer(text=".suggest for answer suggestions.")

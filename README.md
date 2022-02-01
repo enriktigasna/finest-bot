@@ -1,6 +1,6 @@
 # Finest Bot
 
-Finest Bot is a lightweight general purpose discord bot written in python using the nextcord package.
+Finest Bot is a lightweight general purpose discord bot written in python using the disnake package.
 
 ## Installation
 
@@ -37,7 +37,7 @@ User Info Cog Ready
 ```
 
 ## Future of the project
-I have decided to continue on this project in nextcord after discord.py was discontinued, planning on adding slash command support soon
+I have decided to continue on this project in disnake after discord.py was discontinued, planning on adding slash command support soon
 
 
 ## Contributing

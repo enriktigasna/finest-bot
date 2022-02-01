@@ -1,5 +1,5 @@
-import nextcord
-from nextcord.ext import commands
+import disnake
+from disnake.ext import commands
 import asyncio
 
 
@@ -28,7 +28,7 @@ class userinfo(commands.Cog):
         perm_list_parsed = '\n'.join(perm_list).replace("_", " ").title()
         perm_list_parsed = "✅ " + perm_list_parsed.replace("\n", "\n✅ ")
         
-        embed=nextcord.Embed(title="**:busts_in_silhouette: USER INFORMATION :busts_in_silhouette:**", color=0x7289da)
+        embed=disnake.Embed(title="**:busts_in_silhouette: USER INFORMATION :busts_in_silhouette:**", color=0x7289da)
         embed.add_field(name="Username", value=f"```{user}```", inline=True)
         embed.add_field(name="User ID", value=f"```{user.id}```", inline=True)
         embed.add_field(name="Roles [ "+str(len(user.roles))+" ] (shows up to 10 roles)", value=f"```{role_names}```", inline=False)

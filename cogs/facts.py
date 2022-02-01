@@ -1,5 +1,5 @@
-import nextcord
-from nextcord.ext import commands
+import disnake
+from disnake.ext import commands
 import asyncio
 import random
 
@@ -22,7 +22,7 @@ class Facts(commands.Cog):
                      'No Idea what to add',
                      'Sup guys it\'s meeeees']
         response = random.choice(responses)
-        embed = nextcord.Embed(title="Fun facts:")
+        embed = disnake.Embed(title="Fun facts:")
         embed.set_author(name=ctx.author.name + "#" + ctx.author.discriminator, url=ctx.message.jump_url, icon_url=ctx.author.avatar_url)
         embed.add_field(name="Fact:", value=f"{response}")
         embed.set_footer(text='>suggest for fact suggestions')
