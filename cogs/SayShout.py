@@ -1,8 +1,6 @@
 import disnake
 from disnake.ext import commands
 from disnake.ext.commands import has_permissions
-import asyncio
-
 
 class Say(commands.Cog):
     def __init__(self, client):

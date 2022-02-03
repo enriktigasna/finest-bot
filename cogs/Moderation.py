@@ -2,7 +2,6 @@ import disnake
 from disnake.ext import commands
 from disnake.ext.commands import has_permissions
 
-
 class Moderation(commands.Cog):
     def __init__(self, client):
         self.client = client
@@ -18,9 +17,9 @@ class Moderation(commands.Cog):
     async def ban(self, ctx):
         if ctx.message.mentions():
             if ctx.message.author.top_role > ctx.message.mentions[0].top_role:
-                await ctx.reply("He would have been banned but this testin")
+                await ctx.reply(f"Adios <@{ctx.author.id}>")
             else:
-                await ctx.reply("You ain't got the perms to do this nigga (Dw bot is black)")
+                await ctx.reply("lol you can't")
         else:
             await ctx.reply("Usage: .ban user [reason]")
 

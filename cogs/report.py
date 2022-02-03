@@ -1,7 +1,5 @@
 import disnake
 from disnake.ext import commands
-import asyncio
-
 
 class Report(commands.Cog):
     def __init__(self, client):
