@@ -8,7 +8,7 @@ class Say(commands.Cog):
 
     @commands.Cog.listener()
     async def on_ready(self):
-        print('Say and Shout cog ready')
+        print('Say and Shout Cog ready')
 
     @commands.command()
     @has_permissions(administrator=True)
