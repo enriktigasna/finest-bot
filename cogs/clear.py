@@ -11,7 +11,7 @@ class Clear(commands.Cog):
     async def on_ready(self):
         print("Clear Cog Ready")
 
-    @has_permissions(administrator=True)
+    @has_permissions(manage_messages=True)
     @commands.command(aliases=['c'])
     async def clear(self, ctx, amount = 1):
         await ctx.channel.purge(limit=amount+1)
