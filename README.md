@@ -37,7 +37,7 @@ User Info Cog Ready
 ```
 
 ## Future of the project
-I have decided to continue on this project in disnake after discord.py was discontinued, planning on adding slash command support soon
+Discontinued due to changing APIs and dependencies. Don't plan to maintain this project in the future, although I might migrate it back to discord.py now that that library is back in service
 
 
 ## Contributing
